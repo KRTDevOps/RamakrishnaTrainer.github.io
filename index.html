@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Corporate Trainer | Full Stack | DevOps | Cloud | AI/ML</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b1020;
+color:#fff;
+overflow-x:hidden;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Background */
+
+body::before{
+content:"";
+position:fixed;
+width:600px;
+height:600px;
+background:#6a11cb;
+filter:blur(220px);
+top:-200px;
+left:-150px;
+opacity:.35;
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#2575fc;
+filter:blur(220px);
+right:-100px;
+bottom:-100px;
+opacity:.35;
+z-index:-1;
+}
+
+/* Header */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero-content{
+max-width:1200px;
+}
+
+.badge{
+display:inline-block;
+padding:12px 25px;
+border-radius:50px;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+margin-bottom:25px;
+font-weight:600;
+border:1px solid rgba(255,255,255,.2);
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+line-height:1.2;
+margin-bottom:20px;
+background:linear-gradient(to right,#ffffff,#6bcfff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:1.2rem;
+line-height:1.8;
+color:#d6d6d6;
+max-width:1000px;
+margin:auto;
+}
+
+.hero-btn{
+margin-top:40px;
+display:inline-block;
+padding:18px 40px;
+border-radius:50px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:#fff;
+text-decoration:none;
+font-weight:700;
+transition:.4s;
+}
+
+.hero-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(0,114,255,.4);
+}
+
+/* Section */
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.8rem;
+margin-bottom:50px;
+font-weight:700;
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:25px;
+padding:35px;
+}
+
+/* Stats */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.stat{
+text-align:center;
+padding:35px;
+border-radius:20px;
+background:rgba(255,255,255,.05);
+transition:.4s;
+}
+
+.stat:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,.1);
+}
+
+.stat h2{
+font-size:3rem;
+color:#61dafb;
+}
+
+.stat p{
+margin-top:10px;
+}
+
+/* Skills */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+padding:12px 24px;
+border-radius:30px;
+background:linear-gradient(45deg,#6a11cb,#2575fc);
+font-weight:600;
+}
+
+/* Domains */
+
+.domain-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.domain-card{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.domain-card:hover{
+transform:scale(1.05);
+background:rgba(255,255,255,.1);
+}
+
+/* Courses */
+
+.course-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.course{
+background:linear-gradient(135deg,#111827,#1f2937);
+border-radius:25px;
+padding:30px;
+border:1px solid rgba(255,255,255,.1);
+transition:.4s;
+}
+
+.course:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.course h3{
+margin-bottom:15px;
+color:#61dafb;
+}
+
+.course p{
+margin-bottom:8px;
+color:#d5d5d5;
+}
+
+/* Benefits */
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.benefit{
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,.05);
+text-align:center;
+transition:.4s;
+}
+
+.benefit:hover{
+transform:translateY(-10px);
+}
+
+.benefit h3{
+color:#00e5ff;
+margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:40px;
+background:#050816;
+margin-top:40px;
+}
+
+footer h3{
+margin-bottom:10px;
+}
+
+footer p{
+color:#bbb;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+🏆 Corporate Trainer | Solution Architect | Technical Project Manager
+</div>
+
+<h1>
+18+ Years IT Industry Experience
+</h1>
+
+<p>
+Expert Corporate Trainer with extensive experience in Java Full Stack, Python Full Stack,
+Angular, React, DevOps, AWS, Azure, GCP, AI/ML, Data Engineering and Enterprise Architecture.
+Successfully delivered projects for clients across USA, UK, Australia, Singapore, UAE and Malaysia.
+Held leadership positions including Technical Project Manager, Solution Architect and Vice President.
+</p>
+
+<a href="#courses" class="hero-btn">
+Explore Courses
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Professional Experience
+</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>18+</h2>
+<p>Years IT Experience</p>
+</div>
+
+<div class="stat">
+<h2>12+</h2>
+<p>Industry Training Programs</p>
+</div>
+
+<div class="stat">
+<h2>6+</h2>
+<p>Countries Served</p>
+</div>
+
+<div class="stat">
+<h2>15+</h2>
+<p>Business Domains</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Technology Expertise
+</h2>
+
+<div class="skills">
+
+<div class="skill">Java</div>
+<div class="skill">Spring Boot</div>
+<div class="skill">Python</div>
+<div class="skill">Django</div>
+<div class="skill">Flask</div>
+<div class="skill">FastAPI</div>
+<div class="skill">Angular</div>
+<div class="skill">React</div>
+<div class="skill">NodeJS</div>
+<div class="skill">ExpressJS</div>
+<div class="skill">MongoDB</div>
+<div class="skill">Redux</div>
+<div class="skill">MaterialUI</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">Tailwindcss</div>
+<div class="skill">Microservices</div>
+<div class="skill">DevOps</div>
+<div class="skill">Docker</div>
+<div class="skill">Kubernetes</div>
+<div class="skill">Jenkins</div>
+<div class="skill">Terraform</div>
+<div class="skill">Openshift</div>
+<div class="skill">Shellscript</div>
+<div class="skill">AWS</div>
+<div class="skill">Azure</div>
+<div class="skill">GCP</div>
+<div class="skill">Business Analyst</div>
+<div class="skill">Data Analytics</div>
+<div class="skill">Data Analyst</div>
+<div class="skill">Data Engineering</div>
+<div class="skill">AI / ML</div>
+<div class="skill">Windows Administration</div>
+<div class="skill">Linux Administration</div>
+<div class="skill">Cyber Security</div>
+<div class="skill">Testing tools</div>
+<div class="skill">UI / UX</div>
+
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Industry Domains
+</h2>
+
+<div class="domain-grid">
+
+<div class="domain-card">🏦 BFSI</div>
+<div class="domain-card">🏥 Health Care</div>
+<div class="domain-card">✈ Travel & Tourism</div>
+<div class="domain-card">🏨 Hospitality</div>
+<div class="domain-card">🚚 Supply Chain</div>
+<div class="domain-card">📡 Telecom</div>
+<div class="domain-card">🎓 EdTech</div>
+<div class="domain-card">💰 Wealth Management</div>
+<div class="domain-card">📈 Mutual Funds</div>
+<div class="domain-card">📊 Share Market</div>
+
+</div>
+
+</section>
+
+<section id="courses">
+
+<h2 class="section-title">
+Training Programs
+</h2>
+
+<div class="course-grid">
+
+<div class="course">
+<h3>Angular Full Stack Developer</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>React Full Stack Developer</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Python Full Stack Developer</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Java Full Stack Developer</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Testing Tools</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>DevOps Engineering</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Cloud Engineer</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Data Engineer</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>AI / ML Engineer</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Data Analytics</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Business Analyst</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+<div class="course">
+<h3>Data Analyst</h3>
+<p>Duration: 45 Days</p>
+<p>Mode: Online / Offline</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Program Benefits
+</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>🎓 Course Completion Certificate</h3>
+<p>Industry-recognized certification.</p>
+</div>
+
+<div class="benefit">
+<h3>💼 Internship Completion Certificate</h3>
+<p>Hands-on project exposure.</p>
+</div>
+
+<div class="benefit">
+<h3>📜 Recommendation Letter</h3>
+<p>Professional endorsement.</p>
+</div>
+
+<div class="benefit">
+<h3>🚀 Contract Payroll Job Opportunity</h3>
+<p>Based on performance and evaluation.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Transform Your Career with Industry-Oriented Training</h3>
+
+<p>
+Java • Python • Angular • React • DevOps • Cloud • Data Engineering • AI/ML • Testing tools
+</p>
+
+<p style="margin-top:15px;">
+© 2026 <a href="https://sites.google.com/view/smartgnan"  target="_blank">SGnan Global Solutions Pvt Ltd</a> | All Rights Reserved  | <a href="https://www.linkedin.com/in/krt-devops-chennai/" target="_blank">LinkedIn Profile</a>
+
+</p>
+
+</footer>
+
+</body>
+</html>
